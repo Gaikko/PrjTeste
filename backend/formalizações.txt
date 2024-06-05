@@ -1,0 +1,19 @@
+Sucesso
+
+Create: Registro Criado com Sucesso!
+
+Update: Registro(s) Atualizado(s) com Sucesso!
+
+Read: Registro(s) Encontrado(s): ${}
+
+Delete: Registro Excluído com Sucesso!
+
+Erro
+
+Create: Erro na Criação do Registro!
+
+Update: Erro na Atualização do(s) Registro(s)!
+
+Read: Nenhum Registro foi Encontrado!
+
+Delete: Erro na Exclusão do Registro!
