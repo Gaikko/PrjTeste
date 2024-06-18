@@ -12,7 +12,7 @@ module.exports = class CostumerController {
         }
 
         try {
-            const newCostumer = await Costumers.create({ name: name, statusId: 1 });
+            const newCostumer = await Costumers.create({ name: name });
             return res.status(201).json({
                 message: "Registro Criado com Sucesso!",
                 dataCostumer: newCostumer

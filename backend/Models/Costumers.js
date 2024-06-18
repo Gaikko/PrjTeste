@@ -11,6 +11,8 @@ const Costumers = db.define("Costumers", {
 })
 
 Statuses.hasMany(Costumers)
-Costumers.belongsTo(Statuses)
+Costumers.belongsTo(Statuses, {
+    constraints: true,
+})
 
 module.exports = Costumers;

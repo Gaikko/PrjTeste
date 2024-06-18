@@ -4,7 +4,7 @@ const Statuses = require("../Models/Statuses");
 
 module.exports = class CompanyController {
     static async create(req, res) {
-        const { name, costumerId } = req.body;
+        const { name, CostumerId } = req.body;
 
         if (!name) {
             return res.status(422).json(
@@ -12,7 +12,7 @@ module.exports = class CompanyController {
             );
         }
 
-        if (!costumerId) {
+        if (!CostumerId) {
             return res.status(422).json(
                 { message: "Cliente não informado!" }
             );
@@ -20,7 +20,7 @@ module.exports = class CompanyController {
 
         const company = {
             name,
-            costumerId,
+            CostumerId,
             statusId: 1
         }
 

@@ -11,11 +11,13 @@ const Companies = db.define("Company", {
     }
 })
 
-Costumers.hasMany(Companies, {
-    foreignKey: "CostumerId"
+Costumers.hasMany(Companies);
+Companies.belongsTo(Costumers, {
+    constraints: true
 });
-Companies.belongsTo(Costumers);
 Statuses.hasMany(Companies);
-Companies.belongsTo(Statuses);
+Companies.belongsTo(Statuses, {
+    constraints: true
+});
 
 module.exports = Companies;

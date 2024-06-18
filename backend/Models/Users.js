@@ -20,6 +20,8 @@ const Users = db.define("Users", {
 })
 
 Statuses.hasMany(Users)
-Users.belongsTo(Statuses)
+Users.belongsTo(Statuses, {
+    constraints: true,
+})
 
 module.exports = Users;
